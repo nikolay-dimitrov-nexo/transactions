@@ -16,9 +16,9 @@ public class Transaction {
 
     private UUID userId;
 
-    private Currency currency;
+    private int currencyId;
 
-    private TransactionDirection direction;
+    private TransactionType direction;
 
     private BigDecimal amount;
 
