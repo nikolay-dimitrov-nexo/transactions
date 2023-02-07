@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 public class Currency {
 
     private int id;
-    private String shortName;
+    private String name;
     private BigDecimal usdRate;
 
 }
