@@ -27,7 +27,11 @@
 				"vscjava.vscode-java-pack",
 				"ms-vsliveshare.vsliveshare",
 				"streetsidesoftware.code-spell-checker"
-			]
+			],
+			"settings": {
+				"java.compile.nullAnalysis.mode": "automatic",
+    			"java.server.launchMode": "Standard"
+			}
 		}
 	}
 
