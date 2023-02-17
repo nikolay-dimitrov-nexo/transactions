@@ -15,7 +15,7 @@
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [8080],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "mvn clean install",
@@ -29,8 +29,31 @@
 				"streetsidesoftware.code-spell-checker"
 			],
 			"settings": {
+				"extensions": [
+					"vscjava.vscode-java-pack",
+					"ms-vsliveshare.vsliveshare",
+					"streetsidesoftware.code-spell-checker"
+				],
 				"java.compile.nullAnalysis.mode": "automatic",
-    			"java.server.launchMode": "Standard"
+    			"java.server.launchMode": "Standard",
+				"liveshare.allowGuestDebugControl": true,
+				"liveshare.allowGuestTaskControl": true,
+				"liveshare.languages.allowGuestCommandControl": true
+				
+			}
+		},
+		"codespaces": {
+			"extensions": [
+				"vscjava.vscode-java-pack",
+				"ms-vsliveshare.vsliveshare",
+				"streetsidesoftware.code-spell-checker"
+			],
+			"settings": {
+				"java.compile.nullAnalysis.mode": "automatic",
+    			"java.server.launchMode": "Standard",
+				"liveshare.allowGuestDebugControl": true,
+				"liveshare.allowGuestTaskControl": true,
+				"liveshare.languages.allowGuestCommandControl": true	
 			}
 		}
 	}
